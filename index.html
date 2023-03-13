@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <title>Mind Your Own Kernels: Dynamic Convolution for Personalized Feature Extraction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       body {
         background-color: #f2f2f2;
         font-family: 'Roboto', sans-serif;
+        margin: 0;
       }
       #container {
         display: flex;
@@ -16,9 +18,10 @@
       }
       #content {
         text-align: center;
+        padding: 2rem;
       }
-      h1 {
-        font-size: 4rem;
+      h3 {
+        font-size: 3rem;
         margin-bottom: 2rem;
       }
       button {
@@ -30,12 +33,37 @@
         border-radius: 5px;
         cursor: pointer;
       }
-    </style>
+css
+Copy code
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+    h3 {
+      font-size: 2rem;
+    }
+    button {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    button {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+    #content {
+      padding: 1rem;
+    }
+  }
+</style>
   </head>
   <body>
     <div id="container">
       <div id="content">
-        <h3>In this paper, we propose a custom Convolution layer, where kernels are predicted dynamically using a hybrid dense layer for each patch of the input image. This approach saves time and storage as the model doesn't have to remember kernels.</h1>
+        <h3>In this paper, we propose a custom Convolution layer, where kernels are predicted dynamically using a hybrid dense layer for each patch of the input image. This approach saves time and storage as the model doesn't have to remember kernels.</h3>
         <button onclick="window.location.href='https://github.com/Keep-up-sharma/mind_your_own_kernel/raw/gh-pages/template_abcdpdf_pdf_to_word.docx%20(1).pdf'">Learn More</button>
       </div>
     </div>
